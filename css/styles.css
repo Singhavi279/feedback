@@ -1,0 +1,82 @@
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  overflow: auto; /* Allow modal content to scroll */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px; /* Adjusted max-width */
+  max-height: 80%; /* Added max-height */
+  overflow-y: auto; /* Added overflow-y */
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+}
+
+/* Sticky button styles */
+#stickyButton {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Form styles */
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+textarea {
+  width: calc(100% - 16px); /* Adjusted width for borders */
+  resize: none;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="file"],
+select {
+  width: calc(100% - 16px); /* Adjusted width for borders */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
