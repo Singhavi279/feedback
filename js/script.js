@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Function to send form data to Google Sheets using Apps Script deployment
   async function sendDataToSheets(formData) {
-    const deploymentUrl = "https://script.google.com/macros/s/AKfycbyVv2KaPLKs45PagdJhmxL-a1JcgwmCQqwguEj1sIlWjvnNSvEFq4Ehxb_USfdYTAT5/exec"; // Replace with your actual deployment URL
+    const deploymentUrl = "https://script.google.com/macros/library/d/1idcZIo2s7toP5S3EinK8fS4e8W_cTwZZtRN61WQIo4VGZN4kGf5ZZbpY/1"; // Replace with your actual deployment URL
   
     try {
       const response = await fetch(deploymentUrl, {
