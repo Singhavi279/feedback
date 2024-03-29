@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "headers": [
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "https://script.google.com/macros/s/AKfycbyVv2KaPLKs45PagdJhmxL-a1JcgwmCQqwguEj1sIlWjvnNSvEFq4Ehxb_USfdYTAT5/exec" // Replace with your actual Apps Script deployment URL
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "POST, GET, OPTIONS" // Adjust as needed based on your API's requirements
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type" // Add any other required headers
+    }
+  ]
+}
