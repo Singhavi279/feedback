@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Sticky feedback button -->
+  <button id="stickyButton">Feedback</button>
+  
+  <!-- Modal for feedback form -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Feedback Form</h2>
+      <form id="feedbackForm">
+        <label for="category">Category:</label>
+        <select id="category">
+          <option value="feedback">Feedback</option>
+          <option value="feature">Feature Request</option>
+          <option value="bug">Bug Report</option>
+        </select>
+        
+        <!-- Questions for Feedback category -->
+        <div id="feedbackQuestions" class="categoryQuestions">
+          <label>Overall Experience:</label><br>
+          <input type="radio" name="experience" value="Excellent"> Excellent<br>
+          <input type="radio" name="experience" value="Good"> Good<br>
+          <input type="radio" name="experience" value="Neutral"> Neutral<br>
+          <input type="radio" name="experience" value="Bad"> Bad<br>
+          <input type="radio" name="experience" value="Very Bad"> Very Bad<br>
+          <label for="likedMost">What did you like most about the platform?</label>
+          <textarea id="likedMost" rows="4"></textarea>
+          <label for="leastIntuitive">What was the least intuitive or difficult-to-use feature?</label>
+          <textarea id="leastIntuitive" rows="4"></textarea>
+          <label>Select the areas you feel need major improvements:</label>
+          <input type="checkbox" name="improvements" value="Registration Process"> Registration Process<br>
+          <input type="checkbox" name="improvements" value="Creating/ Joining a Team"> Creating/ Joining a Team<br>
+          <input type="checkbox" name="improvements" value="Submitting the idea/ project"> Submitting the idea/ project<br>
+          <input type="checkbox" name="improvements" value="Viewing team status and management"> Viewing team status and management<br>
+          <input type="checkbox" name="improvements" value="Networking during the event"> Networking during the event<br>
+          <input type="checkbox" name="improvements" value="Discussion forums"> Discussion forums<br>
+          <input type="checkbox" name="improvements" value="Polls"> Polls<br>
+          <input type="checkbox" name="improvements" value="Roadmap"> Roadmap<br>
+          <input type="checkbox" name="improvements" value="Interactions (Webinars/ Workshops)"> Interactions (Webinars/ Workshops)<br>
+          <label>Would you recommend this platform to other innovators?</label><br>
+          <input type="radio" name="recommend" value="Yes"> Yes<br>
+          <input type="radio" name="recommend" value="No"> No<br>
+          <div id="recommendReasons" style="display: none;">
+            <label>Reasons:</label>
+            <select id="recommendReason">
+              <option value="Look & Feel">Needs major improvements in Look & Feel</option>
+              <option value="Unresponsive">The platform is unresponsive on my system</option>
+              <option value="Understanding Features">I am not able to understand features</option>
+              <option value="Not Working Functionalities">Most of the functionalities are not working</option>
+              <option value="Prefer Other Platforms">I prefer features of other platforms more</option>
+            </select>
+          </div>
+          <label for="additionalComments">Additional Comments:</label>
+          <textarea id="additionalComments" rows="4"></textarea>
+        </div>
+        
+        <!-- Questions for Feature Request category -->
+        <div id="featureQuestions" class="categoryQuestions" style="display: none;">
+          <label for="featureTitle">Feature Request Title:</label>
+          <input type="text" id="featureTitle"><br>
+          <label for="featureDescription">Detailed Description:</label>
+          <textarea id="featureDescription" rows="4"></textarea><br>
+          <label for="featureFunctionality">Explain the specific functionality of the feature and its benefit for your use case:</label>
+          <textarea id="featureFunctionality" rows="4"></textarea><br>
+          <label for="featureImportance">Why is this feature important for you in Vision?</label>
+          <textarea id="featureImportance" rows="4"></textarea><br>
+          <label for="featureScreenshot">Attach a screenshot or mockup:</label>
+          <input type="file" id="featureScreenshot">
+        </div>
+        
+        <!-- Questions for Bug Report category -->
+        <div id="bugQuestions" class="categoryQuestions" style="display: none;">
+          <label for="bugModule">Which module were you working on when the bug occurred? Provide the module/ screen name:</label>
+          <input type="text" id="bugModule"><br>
+          <label for="bugDescription">Describe the bug in detail, focusing on its impact on managing the innovation project:</label>
+          <textarea id="bugDescription" rows="4"></textarea><br>
+          <label for="bugScreenshot">Attach a screenshot:</label>
+          <input type="file" id="bugScreenshot"><br>
+          <label for="bugConsole">Could you provide a screenshot of the browser developer console?</label>
+          <input type="file" id="bugConsole"><br>
+          <label for="bugExpected">What was the expected behaviour/ desired action for you?</label>
+          <textarea id="bugExpected" rows="4"></textarea><br>
+          <label for="bugFunctionality">Describe how the platform should have functioned for the specific innovation management task:</label>
+          <textarea id="bugFunctionality" rows="4"></textarea><br>
+          <label for="bugReproduce">Are there any specific steps to reproduce the bug? Provide clear steps to replicate the bug consistently:</label>
+          <textarea id="bugReproduce" rows="4"></textarea>
+        </div>
+        
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
